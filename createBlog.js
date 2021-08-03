@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports.handler = async (event) => {
-  //const { title } = JSON.parse(event.body);
+  // The data below would ideally be validated and saved to the database
+  const { title, description } = JSON.parse(event.body);
   return {
     statusCode: 201,
-    body: JSON.stringify({ event }),
-    //body: JSON.stringify(`Blog title: ${title}`),
+    body: JSON.stringify(`Blog: ${title}, Description: ${description}`),
   };
 };

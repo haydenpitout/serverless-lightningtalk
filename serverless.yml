@@ -11,15 +11,15 @@ provider:
   region: us-east-1
 
 functions:
+  getBlogs:
+    handler: getBlogs.handler
+    events:
+      - http:
+          method: GET
+          path: /blogs  
   createBlog:
     handler: createBlog.handler
     events:
       - http:
           method: POST
           path: /blog
-  getBlogs:
-    handler: getBlogs.handler
-    events:
-      - http:
-          method: GET
-          path: /blogs

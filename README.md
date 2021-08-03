@@ -17,7 +17,6 @@ sls create --name YOUR_PROJECT_NAME --template-url PROJECT_TEMPLATE_URL
 ### Deployment
 
 ```
-$ serverless login
 $ serverless deploy -v
 ```
 
